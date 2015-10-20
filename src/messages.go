@@ -7,4 +7,3 @@ type messages struct {
 func (m *messages) getMessages() string {
 	return m.lastMessage
 }
-

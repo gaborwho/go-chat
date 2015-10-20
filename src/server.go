@@ -8,8 +8,7 @@ func main() {
 	viewHandler := &viewHandler{messages: messages}
 	sendHandler := &sendHandler{messages: messages}
 
-    http.Handle("/", viewHandler)
-    http.Handle("/send/", sendHandler)
-    http.ListenAndServe(":8081", nil)
+	http.Handle("/", viewHandler)
+	http.Handle("/send/", sendHandler)
+	http.ListenAndServe(":8081", nil)
 }
-
