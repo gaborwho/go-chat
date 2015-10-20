@@ -10,6 +10,6 @@ type viewHandler struct {
 }
 
 func (vh *viewHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "the message was: %s", vh.messages.lastMessage);
+	fmt.Fprintf(w, "the message was: %s", vh.messages.getMessages());
 }
 
