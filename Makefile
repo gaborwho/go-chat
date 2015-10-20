@@ -6,3 +6,6 @@ build :
 format :
 	gofmt -w src/*.go
 
+install-hooks :
+	ln -siT ../hooks .git/hooks
+
