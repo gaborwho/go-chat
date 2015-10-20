@@ -1,2 +1,4 @@
 #!/bin/sh
-go run *.go
+make
+echo Launching server
+bin/server
